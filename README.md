@@ -1,29 +1,33 @@
-# PowerPong: Elevate Your Pong Experience with Strategic Power-Ups!
+# **PowerPong: Elevate Your Pong Experience with Strategic Power-Ups!**
 
-PowerPong is an advanced take on the classic Pong game, built using Pygame. This project introduces innovative gameplay elements, such as strategic power-ups and downgrades, adding a unique and challenging twist to the traditional Pong mechanics.
+PowerPong is a modern twist on the classic Pong game, built using Pygame. It introduces innovative gameplay elements such as strategic power-ups and downgrades, two exciting game modes, and dynamic challenges, adding layers of complexity and fun to the traditional Pong mechanics.
 
 ---
 
 ## **Table of Contents**
-1. [Features](#features)
-2. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-3. [How to Play](#how-to-play)
-4. [Customization](#customization)
-5. [Contributing](#contributing)
-6. [License](#license)
+1. [Features](#features)  
+2. [Getting Started](#getting-started)  
+   - [Prerequisites](#prerequisites)  
+   - [Installation](#installation)  
+3. [Game Modes](#game-modes)  
+4. [How to Play](#how-to-play)  
+5. [Customization](#customization)  
+6. [Contributing](#contributing)  
+7. [License](#license)
 
 ---
 
 ## **Features**
-- **Authentic Pong Mechanics**: Control your paddle with precision, bounce the ball, and aim to score points.
-- **Strategic Power-Ups & Downgrades**: 
-  - Power-ups: Increase your paddle size for better control.
-  - Downgrades: Decrease your paddle size for added challenge.
-- **Performance Tracking**: Keep track of your score and remaining lives during the game.
-- **Customizable Background**: Use your favorite image as the game’s background.
-- **Clear Game Over Display**: Receive a notification when the game ends, encouraging you to try again.
+- **Authentic Pong Mechanics**: Control your paddle with precision, bounce the ball, and aim to achieve a high score.
+- **Two Unique Game Modes**:  
+  - Infinite Mode: Play endlessly as long as you don’t lose all your lives.  
+  - Timed Mode: Test your skills in a race against time with three challenging levels.
+- **Strategic Power-Ups & Downgrades**:  
+  - Enhance your paddle size or extend your timer with beneficial power-ups.  
+  - Avoid downgrades that shrink your paddle or reduce the timer.
+- **Customizable Background**: Add a personalized touch by setting your favorite image as the background.
+- **Performance Tracking**: Keep an eye on your score, remaining lives, and time during gameplay.
+- **Simple and Intuitive Controls**: Play using only the arrow keys.
 
 ---
 
@@ -47,12 +51,12 @@ Follow these steps to set up PowerPong on your local machine:
 1. **Clone the Repository**  
    Use the command below to clone the repository:
    ```bash
-   git clone https://github.com/DarynOngera/miniproj.git
+   git clone https://github.com/AlvinNathey/graphics_miniproject.git
    ```
-   
+
 2. **Navigate to the Project Directory**
    ```bash
-   cd miniproj
+   cd graphics_miniproject
    ```
 
 3. **Run the Game**  
@@ -63,30 +67,59 @@ Follow these steps to set up PowerPong on your local machine:
 
 ---
 
+## **Game Modes**
+
+PowerPong offers two distinct game modes for different playstyles:
+
+### **1. Infinite Mode**  
+- **Objective**: Play endlessly while scoring as many points as possible.  
+- **Mechanics**:  
+  - Players begin with 3 lives. The game continues until all lives are lost.  
+  - **Power-Ups**:  
+    - **Green Rounded Power-Up**: Increases paddle size.  
+    - **Yellow Cubed Power-Up**: Adds 3 points to your score.  
+  - **Downgrades**:  
+    - **Red Rounded Downgrade**: Shrinks paddle size.  
+  - **Dynamic Difficulty**:  
+    - After every 5 points scored, the ball's speed increases, making the game progressively harder.
+
+---
+
+### **2. Timed Mode**  
+- **Objective**: Survive and score as many points as possible within a time limit.  
+- **Levels**:  
+  - **Easy**: 10-minute timer.  
+  - **Medium**: 7-minute timer.  
+  - **Hard**: 3-minute timer.  
+- **Mechanics**:  
+  - Timer adjusts dynamically with power-ups and downgrades:  
+    - **Green Rounded Power-Up**: Adds 10 seconds to the timer.  
+    - **Red Rounded Downgrade**: Subtracts 10 seconds from the timer.  
+  - **Dynamic Difficulty**:  
+    - After every 5 points scored, the ball's speed increases, adding an extra layer of challenge.  
+
+---
+
 ## **How to Play**
 
-1. **Game Objective**  
-   Prevent the ball from passing your paddle while attempting to score against your opponent.
+### **Game Objective**  
+Prevent the ball from passing your paddle while trying to score as many points as possible in your chosen game mode.
 
-2. **Controls**  
-   - Player 1 (Left Paddle):  
-     - Move Left: `Arrow Left`  
-     - Move Right: `Arrow Right`
+### **Controls**  
+- **Move Left**: Press the `Left Arrow` key.  
+- **Move Right**: Press the `Right Arrow` key.
 
-3. **Power-Ups & Downgrades**  
-   - **Power-Up**: Catch power-ups to increase your paddle size.
-   - **Downgrade**: Avoid downgrades that shrink your paddle size.
-
-4. **Game Over**  
-   When one player loses all their lives, the game ends with a "Game Over" message.
+### **Game Over**  
+- In **Infinite Mode**, the game ends when all 3 lives are lost.  
+- In **Timed Mode**, the game ends when the timer runs out.
 
 ---
 
 ## **Customization**
 
-Personalize your PowerPong experience by modifying the constants in the `mainpong.py` or `newpong.py`file.
+Tailor the game to your preferences by modifying the constants in the `mainpong.py` or `newpong.py` file.
 
-### Available Customizations:
+### **Available Customizations**
 1. **Screen Dimensions**
    ```python
    WIDTH = 800  # Set screen width
@@ -126,9 +159,9 @@ Personalize your PowerPong experience by modifying the constants in the `mainpon
 
 We welcome contributions from the community! Here’s how you can help:
 1. **Report Bugs**  
-   Identify and report any issues with the game.
+   Identify and report any issues with the game.  
 2. **Suggest Features**  
-   Share ideas for new power-ups, mechanics, or visual effects.
+   Share ideas for new power-ups, mechanics, or visual effects.  
 3. **Submit Code**  
    Fork the repository, make changes, and submit a pull request.
 
@@ -140,4 +173,4 @@ This project is open-source and distributed under the [MIT License](LICENSE). Fe
 
 ---
 
-With PowerPong, you get more than just a game – you get a dynamic experience that challenges your reflexes and strategic thinking. Install, play, and let the fun begin! 🎮
+With PowerPong, you get more than just a game – you get a dynamic experience that challenges your reflexes, strategic thinking, and adaptability. Install, play, and let the fun begin! 🎮
