@@ -1,6 +1,8 @@
+---
+
 # **PowerPong: Elevate Your Pong Experience with Strategic Power-Ups!**
 
-PowerPong is a modern twist on the classic Pong game, built using Pygame. It introduces innovative gameplay elements such as strategic power-ups and downgrades, two exciting game modes, and dynamic challenges, adding layers of complexity and fun to the traditional Pong mechanics.
+PowerPong is a modern twist on the classic Pong game, built using Pygame. It introduces innovative gameplay elements such as strategic power-ups and downgrades, two exciting game modes, dynamic challenges, and customizable soundtracks, adding layers of complexity and fun to the traditional Pong mechanics.
 
 ---
 
@@ -20,12 +22,17 @@ PowerPong is a modern twist on the classic Pong game, built using Pygame. It int
 ## **Features**
 - **Authentic Pong Mechanics**: Control your paddle with precision, bounce the ball, and aim to achieve a high score.
 - **Two Unique Game Modes**:  
-  - Infinite Mode: Play endlessly as long as you don’t lose all your lives.  
-  - Timed Mode: Test your skills in a race against time with three challenging levels.
+  - **Infinite Mode**: Play endlessly as long as you don’t lose all your lives.  
+  - **Timed Mode**: Test your skills in a race against time with three challenging levels.
 - **Strategic Power-Ups & Downgrades**:  
   - Enhance your paddle size or extend your timer with beneficial power-ups.  
   - Avoid downgrades that shrink your paddle or reduce the timer.
+- **Pause and Restart Options**:  
+  - Press `P` to pause the game. While paused, you can resume (`P`) or quit to the intro screen (`Q`).  
+  - When the game ends, restart (`R`) or quit to the intro screen (`Q`).
 - **Customizable Background**: Add a personalized touch by setting your favorite image as the background.
+- **Background Music and Sound Effects**:  
+  - Background music and soundtracks for key events (power-up collected, downgrade collected, and game over) are included and can be customized.
 - **Performance Tracking**: Keep an eye on your score, remaining lives, and time during gameplay.
 - **Simple and Intuitive Controls**: Play using only the arrow keys.
 
@@ -36,7 +43,7 @@ PowerPong is a modern twist on the classic Pong game, built using Pygame. It int
 ### **Prerequisites**
 Before running the game, ensure you have the following installed:
 1. **Python** (3.6 or higher)  
-   [Download Python here](https://www.python.org/downloads/)
+   [Download Python here](https://www.python.org/downloads/).
 2. **Pygame** library  
    Install it via pip:
    ```bash
@@ -90,7 +97,7 @@ PowerPong offers two distinct game modes for different playstyles:
 - **Levels**:  
   - **Easy**: 10-minute timer.  
   - **Medium**: 7-minute timer.  
-  - **Hard**: 3-minute timer.  
+  - **Hard**: 4-minute timer.  
 - **Mechanics**:  
   - Timer adjusts dynamically with power-ups and downgrades:  
     - **Green Rounded Power-Up**: Adds 10 seconds to the timer.  
@@ -107,51 +114,60 @@ Prevent the ball from passing your paddle while trying to score as many points a
 
 ### **Controls**  
 - **Move Left**: Press the `Left Arrow` key.  
-- **Move Right**: Press the `Right Arrow` key.
+- **Move Right**: Press the `Right Arrow` key.  
+- **Pause/Unpause**: Press `P`.  
 
 ### **Game Over**  
-- In **Infinite Mode**, the game ends when all 3 lives are lost.  
-- In **Timed Mode**, the game ends when the timer runs out.
+- **Infinite Mode**: The game ends when all 3 lives are lost.  
+- **Timed Mode**: The game ends when the timer runs out.  
+
+At the end of the game, choose one of the following options:  
+- **Restart**: Press `R` to restart the game.  
+- **Quit**: Press `Q` to return to the intro screen.
 
 ---
 
 ## **Customization**
 
-Tailor the game to your preferences by modifying the constants in the `mainpong.py` or `newpong.py` file.
+PowerPong allows for extensive customization:
 
-### **Available Customizations**
-1. **Screen Dimensions**
+### **1. Background and Screen**
+- **Screen Dimensions**:
    ```python
    WIDTH = 800  # Set screen width
    HEIGHT = 600  # Set screen height
    ```
+- **Background Image**: Replace the default background by setting the path to your preferred image:
+   ```python
+   BACKGROUND_IMAGE = "path/to/your/image.png"
+   ```
 
-2. **Paddle Size**
+### **2. Game Elements**
+- **Paddle Size**:
    ```python
    PADDLE_WIDTH = 20  # Set paddle width
    PADDLE_HEIGHT = 100  # Set paddle height
    ```
-
-3. **Ball Size**
+- **Ball Size**:
    ```python
    BALL_RADIUS = 10  # Set ball radius
    ```
-
-4. **Colors**
-   - Paddle color:
+- **Colors**:
+   - Paddle Color:
      ```python
      PADDLE_COLOR = (255, 255, 255)  # Set paddle color (RGB format)
      ```
-   - Background color (used if no image is applied):
+   - Background Color (if no image is applied):
      ```python
      BACKGROUND_COLOR = (0, 0, 0)  # Set background color (RGB format)
      ```
 
-5. **Background Image**  
-   Replace the background image by providing the path to your preferred image:
-   ```python
-   BACKGROUND_IMAGE = "path/to/your/image.png"
-   ```
+### **3. Audio**
+Customize audio by replacing the files in the `assets/` folder:
+- **Background Music**: Replace `lofi.mp3` with your preferred track.  
+- **Power-Up Sound**: Replace `coin.mp3` with your custom sound.  
+- **Downgrade Sound**: Replace `wrong.mp3`.  
+- **Game Over Sound**: Replace `gta.wav`.
 
 ---
 
@@ -173,4 +189,4 @@ This project is open-source and distributed under the [MIT License](LICENSE). Fe
 
 ---
 
-With PowerPong, you get more than just a game – you get a dynamic experience that challenges your reflexes, strategic thinking, and adaptability. Install, play, and let the fun begin! 🎮
+Enjoy the thrill of PowerPong – where strategy meets reflexes! 🎮

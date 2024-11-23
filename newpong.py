@@ -198,6 +198,7 @@ red_power_up = PowerUp(random.randint(50, WIDTH - 50), random.randint(50, HEIGHT
 
 # Mode selection screen before starting the game
 timer_seconds = select_mode_screen()  # Get the selected mode
+time_elapsed = 0  # Track elapsed time globally
 
 # Game loop
 running = True
@@ -271,13 +272,14 @@ while running:
             score = 0  # Reset score
             lives = 3  # Reset lives
             timer_seconds = 10 * 60  # Reset time (10 minutes)
-        else:  # Reset the ball and restart the timer
+            time_elapsed = 0  # Reset elapsed time
+        else:  # Reset the ball, but continue the timer
             ball = Ball(WIDTH // 2, HEIGHT // 2, BALL_RADIUS, 5)  # Reset ball position
-            start_ticks = pygame.time.get_ticks()  # Restart the timer
+            start_ticks = pygame.time.get_ticks() - int(time_elapsed * 1000)  # Adjust start_ticks
 
     # Timer update (decreases based on real-world time)
-    time_passed = (pygame.time.get_ticks() - start_ticks) / 1000  # Time in seconds
-    remaining_time = timer_seconds - int(time_passed)
+    time_elapsed = (pygame.time.get_ticks() - start_ticks) / 1000  # Time in seconds
+    remaining_time = timer_seconds - int(time_elapsed)
 
     if remaining_time <= 0:
         running = False  # End the game when time runs out
@@ -295,13 +297,3 @@ while running:
     clock.tick(FPS)
 
 pygame.quit()
-
-# Add this at the bottom of your existing script
-def run():
-    # Move your existing game loop into this function
-    print("Starting Timed Mode (New Pong Game)")
-    # Place the game loop code here
-
-if __name__ == "__main__":
-    run()  # If run directly, start the game
-
