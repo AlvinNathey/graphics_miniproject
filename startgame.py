@@ -15,6 +15,7 @@ BACKGROUND_COLOR = (0, 0, 0)
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pong Game Menu")
 
+
 # Function to draw text on the screen
 def draw_text(text, size, x, y, color=WHITE, center=True):
     font = pygame.font.SysFont(None, size)
