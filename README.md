@@ -101,7 +101,7 @@ PowerPong offers two distinct game modes for different playstyles:
 - **Mechanics**:  
   - Timer adjusts dynamically with power-ups and downgrades:  
     - **Green Rounded Power-Up**: Adds 10 seconds to the timer.  
-    - **Red Rounded Downgrade**: Subtracts 10 seconds from the timer.  
+    - **Red Rounded Downgrade**: Subtracts 10 seconds from the timer..  
   - **Dynamic Difficulty**:  
     - After every 5 points scored, the ball's speed increases, adding an extra layer of challenge.  
 
@@ -189,4 +189,4 @@ This project is open-source and distributed under the [MIT License](LICENSE). Fe
 
 ---
 
-Enjoy the thrill of PowerPong – where strategy meets reflexes! 🎮
+Enjoy the thrill of PowerPong – where strategy meets reflexes!! 🎮
