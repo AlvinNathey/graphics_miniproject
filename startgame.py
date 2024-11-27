@@ -11,6 +11,7 @@ WIDTH, HEIGHT = 800, 600
 WHITE = (255, 255, 255)
 BACKGROUND_COLOR = (0, 0, 0)
 
+
 # Set up the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pong Game Menu")
