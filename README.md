@@ -1,6 +1,6 @@
 ---
 
-# **PowerPong: Elevate Your Pong Experience with Strategic Power-Ups!**
+# **PowerPong: Elevate Your Pong Experience with Strategic Power-Ups!!**
 
 PowerPong is a modern twist on the classic Pong game, built using Pygame. It introduces innovative gameplay elements such as strategic power-ups and downgrades, two exciting game modes, dynamic challenges, and customizable soundtracks, adding layers of complexity and fun to the traditional Pong mechanics.
 
